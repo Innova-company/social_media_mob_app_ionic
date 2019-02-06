@@ -1,0 +1,26 @@
+page-add-post {
+    agm-map
+    {
+    height: 200px;
+    }
+    img 
+    {
+        height: 200px;
+
+    }
+
+    .main-content {
+        
+        min-height: 100%;
+        background-image: url('../assets/imgs/bg.jpg');
+      }
+      .container-logo {
+        display: inline-block;
+        width: 100%;
+        margin: 20px 0;
+        img {
+          max-width: 250px;
+        }
+      }
+
+}

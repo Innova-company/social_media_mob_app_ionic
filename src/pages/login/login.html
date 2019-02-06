@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Social App
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+      <div class="main-content">
+          <div padding text-center class="container-logo">
+            <img src="assets/imgs/download.png">
+          </div>
+          <div padding  style="width: 100%;">
+            <form [formGroup]="authForm">
+              <div class="errormsg">
+          <div class="error-box" *ngIf="email.errors && email.touched">
+            <p>Email is required.</p>
+          </div>
+          <div *ngIf="password.errors && password.touched">
+            <p>Password is required.</p>
+          </div>
+              </div>
+    <ion-list>
+        <ion-item>
+            <ion-label><ion-icon ios="ios-mail" md="md-mail"></ion-icon></ion-label>
+          <ion-input type="text"[(ngModel)]="userMail" [formControl]="email" id="email" type="email" required placeholder="Email *" ></ion-input>
+        </ion-item>
+      
+        <ion-item>
+            <ion-label><ion-icon ios="ios-unlock" md="md-unlock"></ion-icon></ion-label>
+          <ion-input type="Password"[(ngModel)]="userPassword"[formControl]="password" id="password" type="{{passwordtype}}" required placeholder="Password *"></ion-input>
+        </ion-item>
+        <br>
+        <button ion-button floating full (click)="login()">Login</button><br>
+        <button ion-button floating full color="danger" (click)="loginWithGoogle()"><ion-icon name="logo-google"></ion-icon><ion-icon name="logo-google"></ion-icon><ion-icon name="logo-google"></ion-icon></button>
+      </ion-list>
+  
+          
+      <a>don't have an account?!</a><br>
+    </form>
+      <button ion-button floating color="secondary" (click)="gosignup()" small>SignUp</button>
+    </div>
+  </div>
+  </ion-content>
+  
+  

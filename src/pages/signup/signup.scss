@@ -1,0 +1,63 @@
+.main-content {
+        
+    min-height: 100%;
+    background-image: url('../assets/imgs/cam.jpg');
+  }
+  .container-logo {
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+    img {
+      max-width: 250px;
+    }
+  }
+ 
+
+  .item-inner{
+    border-bottom: 0px !important;
+  }
+
+  .socialLogin {
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+
+  .list {
+    padding:0 !important;
+  }
+
+  form {
+    .button-md,
+    .button-ios {
+      margin: 0px !important;
+      background-color: black;
+      padding: 26px !important;
+    }
+  }
+  .form-bottom-text label,
+  a {
+    color: white;
+  }
+  // a[disabled],
+// button[disabled],
+// [ion-button][disabled] {
+//   opacity: 0.8 !important;
+// }
+.errormsg p {
+background-color: rgba(255,0,0,.3);
+color: white;
+border: 1px solid #FF0000;
+padding: 5px;
+}
+.eye-icon-btn{
+background-color: transparent !important;
+color: black;
+font-size: 2.2rem !important;
+}
+.list-md, .list-ios {
+    margin:0 !important;
+  }
+  .list {
+    padding:0 !important;
+  }

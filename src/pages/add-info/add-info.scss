@@ -1,0 +1,45 @@
+
+page-add-info {
+  
+  agm-map
+  {
+  height: 200px;
+  }
+    .errormsg p {
+        background-color: rgba(255,0,0,.3);
+        color: white;
+        border: 1px solid #FF0000;
+        padding: 5px;
+      }
+      .main-content {
+        
+        min-height: 100%;
+        background-image: url('../assets/imgs/_bg.jpg');
+      }
+      .container-logo {
+        display: inline-block;
+        width: 100%;
+        margin: 20px 0;
+        img {
+          max-width: 250px;
+        }
+      }
+      form {
+        .button-md,
+        .button-ios {
+          margin: 0px !important;
+          background-color:secondary;
+          padding: 26px !important;
+        }
+      }
+      .form-bottom-text label,
+      a {
+        color: white;
+      }
+      .item-inner{
+        border-bottom: 0px !important;
+      }
+      .list {
+        padding:0 !important;
+      }
+}

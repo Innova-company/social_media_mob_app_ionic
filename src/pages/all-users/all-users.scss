@@ -1,0 +1,29 @@
+page-all-users {
+
+    .searchName{
+        text-align: center;
+        background-color: skyblue;
+        padding: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 20px;
+        font-size: 25px;
+    }
+
+    .userItem
+    {
+       // background-color:skyblue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       // color:sienna;
+        margin-left: 20px;
+        font-size: 25px;
+        
+    }
+    .btnFollow
+    {
+        //margin-left: 90px;
+        font-family: cursive;
+        width: 120px;
+        padding: 15px;
+        float: right;
+    }
+}

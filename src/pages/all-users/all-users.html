@@ -1,0 +1,26 @@
+
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>All Users</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let user of UsersList">
+      <span class="userItem">{{user.Name}}</span> <button  class="btnFollow"  ion-button round  (click)="onItemClick(user,user.userid,user.Name)"  >Follow</button>
+    </ion-item>
+  </ion-list>
+  
+
+
+ <!--<ion-item *ngFor="let User of users_list " >
+  <span class="userItem">{{User.ProfileDetails.Name}}</span> <button [disabled]="!followd" class="btnFollow"  ion-button round  (click)="onItemClick(User.ProfileDetails,User)" (click)="disabledbtn(User)" >Follow</button>
+
+</ion-item>-->
+</ion-content>
